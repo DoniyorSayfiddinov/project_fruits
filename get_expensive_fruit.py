@@ -7,7 +7,10 @@ def get_expensive_fruit(data: str) -> str:
     returns:
         str: name of the most expensive fruit
     """
-    # your code here
-    return  
+    x=data.split()
+    return x[2]
+f=open("fruits.csv").read()
+print(get_expensive_fruit(f))
+
 
 

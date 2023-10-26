@@ -8,4 +8,9 @@ def get_cheapest_fruit_id(data: str) -> int:
         int: id of the cheapest fruit
     """
     # your code here
-    pass
+    x=data.split()
+    return x[0]
+f=open("fruits.csv").read()
+print(get_cheapest_fruit_id(f))
+
+
